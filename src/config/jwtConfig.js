@@ -1,7 +1,7 @@
 require('dotenv').config();
 const jwt = require('jsonwebtoken');
 
-const SECRET = process.env.JWT_SECRET_KEY;
+const SECRET = process.env.JWT_SECRET_KEY || 'jwt_secret';
 
 const signToken = (payload) => jwt.sign(payload, SECRET, {
   expiresIn: '7d',
