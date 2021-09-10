@@ -1,0 +1,14 @@
+CREATE TABLE `SEU_BANCO_DE_DADOS`.`users` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(100) NOT NULL,
+  `email` VARCHAR(100) NOT NULL,
+  `password` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`id`));
+
+CREATE TABLE `SEU_BANCO_DE_DADOS`.`favorites` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `userid` INT NOT NULL,
+  `favorited` VARCHAR(30) NOT NULL,
+  `type` VARCHAR(30) NOT NULL,
+  PRIMARY KEY (`id`)),
+  FOREIGN KEY (`userid`) REFERENCES users(id);
