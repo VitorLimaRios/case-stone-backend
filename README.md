@@ -1,4 +1,4 @@
-## Projeto de Web Chat
+## Case-Stone Backend
 
 Aplicação server-side desenvolvido para a Stone como parte do processo seletivo para um trabalho como desenvolvedor Full Stack.
 
