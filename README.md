@@ -22,5 +22,6 @@ No seu MYSQL execute o arquivo create_tables.sql presente na raiz do diretório,
 
 Para iniciar o servidor você pode executar o seguinte comando:
 - `npm start`.
+
 Ou caso queira usar o nodemon para não precisar resetar o servidor manualmente após cada modificação:
 - `npm run dev`.
